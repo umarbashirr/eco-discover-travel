@@ -1,7 +1,7 @@
 import { Container } from "@/components/container";
+import { DestinationsSlide } from "@/components/destinations-slide";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 const HomePage = () => {
   return (
@@ -14,10 +14,10 @@ const HomePage = () => {
             alt="Kashmir Image as Background"
             className="object-cover rounded-2xl shadow"
           />
-          <div className="bg-accent w-full h-full absolute top-0 left-0 bg-opacity-60 rounded-2xl"></div>
+          <div className="bg-primary w-full h-full absolute top-0 left-0 bg-opacity-60 rounded-2xl"></div>
           <div className="absolute top-0 left-0 w-full h-full ">
             <div className="flex flex-col items-center justify-center w-full h-full max-w-full md:max-w-[80%] mx-auto">
-              <h1 className="text-3xl md:text-4xl 2xl:text-6xl font-bold lg:leading-snug text-center text-white">
+              <h1 className="text-3xl md:text-4xl 2xl:text-6xl font-bold 2xl:leading-normal text-center text-white">
                 Explore the Beauty of Kashmir & Ladakh with Eco Discover Travel
               </h1>
               <p className="my-4 text-base md:text-lg md:leading-normal text-white text-center">
@@ -43,6 +43,21 @@ const HomePage = () => {
           </div>
         </div>
       </Container>
+      {/* Top Locations */}
+
+      <section id="topLocations" className="py-12 md:py-24">
+        <Container>
+          <h1 className="text-2xl md:text-4xl font-semibold text-center">
+            Top Destinations
+          </h1>
+          <p className="text-text text-sm text-center mt-4 md:max-w-4xl mx-auto">
+            Discover the unparalleled beauty of Kashmir and Ladakh with our
+            curated travel packages. From snow-capped mountains to serene
+            valleys, these destinations promise unforgettable experiences.
+          </p>
+          <DestinationsSlide />
+        </Container>
+      </section>
     </>
   );
 };
