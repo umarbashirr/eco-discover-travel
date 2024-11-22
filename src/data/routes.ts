@@ -16,3 +16,18 @@ export const routes = [
     label: "Contact Us",
   },
 ];
+
+export const otherRoutes = [
+  {
+    href: "/privacy-policy",
+    label: "Privacy Policy",
+  },
+  {
+    href: "/terms-and-conditions",
+    label: "Terms & Conditions",
+  },
+  {
+    href: "/refund-cancellation-policy",
+    label: "Refund & Cancellation Policy",
+  },
+];
