@@ -20,7 +20,7 @@ export const MainNavbar = () => {
 
   return (
     <>
-      <div className="flex items-center w-full  h-16 border-b">
+      <div className="flex items-center w-full  h-16">
         <Container className="flex items-center justify-between">
           <Logo />
           <nav className="hidden lg:flex items-center gap-4">
