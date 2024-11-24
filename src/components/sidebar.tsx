@@ -19,7 +19,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
   return (
     <div
       className={cn(
-        "w-full h-full fixed top-0 left-0 bg-white duration-200 ease-linear transition-all overflow-hidden",
+        "w-full h-full fixed top-0 left-0 bg-white duration-200 ease-linear transition-all overflow-hidden z-[99999]",
         isOpen ? "max-w-full" : "max-w-0"
       )}
     >
