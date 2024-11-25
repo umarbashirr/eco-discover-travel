@@ -1,6 +1,8 @@
 import { Container } from "@/components/container";
 import { PageHero } from "@/components/page-hero";
+import { Button } from "@/components/ui/button";
 import { TravelPackages } from "@/data/packages";
+import { ITravelPackage } from "@/interfaces/package.interface";
 import { ArrowRight, Calendar, MapPin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -41,12 +43,11 @@ const PackagesPage = () => {
                   {travelPackage?.duration?.days} D
                 </p>
               </div>
-              <Link
-                href={`/our-packages/${travelPackage?.slug}`}
-                className="flex items-center gap-2 text-center justify-center py-2 px-4 text-sm font-medium border rounded-md shadow-sm transition-all duration-300 ease-in-out hover:bg-accent hover:text-white"
-              >
-                View Details <ArrowRight className="w-3 h-3" />
-              </Link>
+              <Button asChild variant="outline">
+                <Link href={`/our-packages/${travelPackage?.slug}`}>
+                  View Details <ArrowRight className="w-3 h-3" />
+                </Link>
+              </Button>
             </div>
           </div>
         ))}

@@ -17,7 +17,7 @@ const AboutPage = () => {
             <h2 className="text-2xl md:text-3xl font-semibold text-primary">
               Who We Are
             </h2>
-            <p className="text-text leading-normal mt-4">
+            <p className="text-muted-foreground leading-loose mt-4">
               Eco Discover Travel organizes personalized trips to the scenic
               regions of Kashmir, Ladakh, and nearby destinations. We focus on
               creating meaningful travel experiences that allow you to explore
@@ -27,7 +27,7 @@ const AboutPage = () => {
               travelers.
             </p>
             <h3 className="mt-6 text-xl font-medium">Key Highlights</h3>
-            <ul className="list-disc ml-8 mt-4 text-text flex flex-col gap-2">
+            <ul className="list-disc ml-8 mt-4 text-muted-foreground flex flex-col gap-2">
               <li>Over [X years] of expertise in the travel industry</li>
               <li>Specializing in Kashmir and Ladakh tours</li>
               <li>
@@ -51,7 +51,7 @@ const AboutPage = () => {
           <h2 className="text-2xl md:text-3xl font-semibold text-primary text-center">
             Why Choose Us
           </h2>
-          <p className="text-sm text-text text-center mt-4">
+          <p className="text-sm text-muted-foreground text-center mt-4">
             Your Journey, Our Commitment to Excellence
           </p>
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -64,7 +64,7 @@ const AboutPage = () => {
                 <h3 className="text-xl font-medium text-primary mb-2 text-center">
                   {feature.title}
                 </h3>
-                <p className="text-text text-sm text-center">
+                <p className="text-muted-foreground text-sm text-center">
                   {feature.description}
                 </p>
               </div>

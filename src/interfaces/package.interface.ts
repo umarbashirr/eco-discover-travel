@@ -1,4 +1,4 @@
-interface ITravelPackage {
+export interface ITravelPackage {
   title: string; // Name of the package
   slug: string;
   short_desc: string;
@@ -14,7 +14,7 @@ interface ITravelPackage {
   featured_image: string;
 }
 
-interface ItineraryItem {
+export interface ItineraryItem {
   title: string; // Title of the day
   details: string[]; // Detailed description of the day's activities
 }

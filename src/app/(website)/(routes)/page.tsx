@@ -1,6 +1,8 @@
 import { Container } from "@/components/container";
 import { DestinationsSlide } from "@/components/destinations-slide";
+import { Button } from "@/components/ui/button";
 import { TravelPackages } from "@/data/packages";
+import { ITravelPackage } from "@/interfaces/package.interface";
 import { ArrowRight, Calendar, ChevronRight, MapPin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -23,7 +25,7 @@ const HomePage = () => {
             alt="Kashmir Image as Background"
             className="object-cover rounded-2xl shadow"
           />
-          <div className="bg-primary w-full h-full absolute top-0 left-0 bg-opacity-60 rounded-2xl"></div>
+          <div className="bg-primary/60 w-full h-full absolute top-0 left-0 rounded-2xl"></div>
           <div className="absolute top-0 left-0 w-full h-full ">
             <div className="flex flex-col items-center justify-center w-full h-full max-w-full md:max-w-[80%] mx-auto">
               <h1 className="text-3xl md:text-4xl 2xl:text-6xl font-bold 2xl:leading-normal text-center text-white">
@@ -35,18 +37,12 @@ const HomePage = () => {
                 packages tailored just for you.
               </p>
               <div className="flex flex-col md:flex-row items-center gap-4">
-                <Link
-                  href="/our-packages"
-                  className="bg-accent text-white rounded-md py-3 px-6 shadow-sm hover:bg-accent/90 transition-all duration-300 ease-in-out text-sm font-medium"
-                >
-                  Explore Our Packages
-                </Link>
-                <Link
-                  href="/contact-us"
-                  className="bg-gray-100 text-primary rounded-md py-3 px-6 shadow-sm hover:bg-gray-200 transition-all duration-300 ease-in-out text-sm font-medium"
-                >
-                  Book Your Trip Now
-                </Link>
+                <Button asChild variant="accent" size="xl">
+                  <Link href="/our-packages">Explore Our Packages</Link>
+                </Button>
+                <Button asChild variant="secondary" size="xl">
+                  <Link href="/contact-us">Book Your Trip Now</Link>
+                </Button>
               </div>
             </div>
           </div>
@@ -59,7 +55,7 @@ const HomePage = () => {
           <h1 className="text-2xl md:text-4xl font-semibold text-center">
             Top Destinations
           </h1>
-          <p className="text-text text-sm text-center mt-4 md:max-w-4xl mx-auto">
+          <p className="text-muted-foreground text-sm text-center mt-4 md:max-w-4xl mx-auto">
             Discover the unparalleled beauty of Kashmir and Ladakh with our
             curated travel packages. From snow-capped mountains to serene
             valleys, these destinations promise unforgettable experiences.
@@ -74,7 +70,7 @@ const HomePage = () => {
           <h1 className="text-2xl md:text-4xl font-semibold text-center">
             Explore Our Latest Travel Packages
           </h1>
-          <p className="text-text text-sm text-center mt-4 md:max-w-4xl mx-auto">
+          <p className="text-muted-foreground text-sm text-center mt-4 md:max-w-4xl mx-auto">
             Discover our newest Kashmir and Ladakh travel packages, featuring
             handpicked itineraries that offer unforgettable experiences. Book
             now and create memories that last a lifetime!
@@ -100,10 +96,10 @@ const HomePage = () => {
                         {travelPackage.title}
                       </h3>
                     </Link>
-                    <p className="text-sm text-text mt-4 line-clamp-2">
+                    <p className="text-sm text-muted-foreground mt-4 line-clamp-2">
                       {travelPackage?.short_desc}
                     </p>
-                    <div className="py-2 border-t border-b my-4 flex items-center gap-4 text-text">
+                    <div className="py-2 border-t border-b my-4 flex items-center gap-4 text-muted-foreground">
                       <p className="flex items-center gap-2 text-sm">
                         <MapPin className="w-4 h-4" />{" "}
                         {travelPackage?.destination}
@@ -114,12 +110,11 @@ const HomePage = () => {
                         {travelPackage?.duration?.days} D
                       </p>
                     </div>
-                    <Link
-                      href={`/our-packages/${travelPackage?.slug}`}
-                      className="flex items-center gap-2 text-center justify-center py-2 px-4 text-sm font-medium border rounded-md shadow-sm transition-all duration-300 ease-in-out hover:bg-accent hover:text-white"
-                    >
-                      View Details <ArrowRight className="w-3 h-3" />
-                    </Link>
+                    <Button asChild variant="outline">
+                      <Link href={`/our-packages/${travelPackage?.slug}`}>
+                        View Details <ArrowRight className="w-3 h-3" />
+                      </Link>
+                    </Button>
                   </div>
                 </div>
               )
@@ -134,7 +129,7 @@ const HomePage = () => {
           <h1 className="text-2xl md:text-4xl font-semibold text-center">
             Kashmir Packages
           </h1>
-          <p className="text-text text-sm text-center mt-4 md:max-w-4xl mx-auto">
+          <p className="text-muted-foreground text-sm text-center mt-4 md:max-w-4xl mx-auto">
             Discover the beauty of Kashmir with our tailored packages. From Dal
             Lake to the snow-covered peaks of Gulmarg, experience nature,
             culture, and adventure in one unforgettable journey.
@@ -161,10 +156,10 @@ const HomePage = () => {
                         {travelPackage.title}
                       </h3>
                     </Link>
-                    <p className="text-sm text-text mt-4 line-clamp-2">
+                    <p className="text-sm text-muted-foreground mt-4 line-clamp-2">
                       {travelPackage?.short_desc}
                     </p>
-                    <div className="py-2 border-t border-b my-4 flex items-center gap-4 text-text">
+                    <div className="py-2 border-t border-b my-4 flex items-center gap-4 text-muted-foreground">
                       <p className="flex items-center gap-2 text-sm">
                         <MapPin className="w-4 h-4" />{" "}
                         {travelPackage?.destination}
@@ -175,12 +170,11 @@ const HomePage = () => {
                         {travelPackage?.duration?.days} D
                       </p>
                     </div>
-                    <Link
-                      href={`/our-packages/${travelPackage?.slug}`}
-                      className="flex items-center gap-2 text-center justify-center py-2 px-4 text-sm font-medium border rounded-md shadow-sm transition-all duration-300 ease-in-out hover:bg-accent hover:text-white"
-                    >
-                      View Details <ArrowRight className="w-3 h-3" />
-                    </Link>
+                    <Button asChild variant="outline">
+                      <Link href={`/our-packages/${travelPackage?.slug}`}>
+                        View Details <ArrowRight className="w-3 h-3" />
+                      </Link>
+                    </Button>
                   </div>
                 </div>
               ))}
@@ -194,7 +188,7 @@ const HomePage = () => {
           <h1 className="text-2xl md:text-4xl font-semibold text-center">
             Ladakh Packages
           </h1>
-          <p className="text-text text-sm text-center mt-4 md:max-w-4xl mx-auto">
+          <p className="text-muted-foreground text-sm text-center mt-4 md:max-w-4xl mx-auto">
             Experience the rugged beauty of Ladakh with our adventure-filled
             packages. From the highest motorable roads to serene lakes and
             monasteries, Ladakh offers a unique journey for the bold traveler.
@@ -221,10 +215,10 @@ const HomePage = () => {
                         {travelPackage.title}
                       </h3>
                     </Link>
-                    <p className="text-sm text-text mt-4 line-clamp-2">
+                    <p className="text-sm text-muted-foreground mt-4 line-clamp-2">
                       {travelPackage?.short_desc}
                     </p>
-                    <div className="py-2 border-t border-b my-4 flex items-center gap-4 text-text">
+                    <div className="py-2 border-t border-b my-4 flex items-center gap-4 text-muted-foreground">
                       <p className="flex items-center gap-2 text-sm">
                         <MapPin className="w-4 h-4" />{" "}
                         {travelPackage?.destination}
@@ -235,12 +229,11 @@ const HomePage = () => {
                         {travelPackage?.duration?.days} D
                       </p>
                     </div>
-                    <Link
-                      href={`/our-packages/${travelPackage?.slug}`}
-                      className="flex items-center gap-2 text-center justify-center py-2 px-4 text-sm font-medium border rounded-md shadow-sm transition-all duration-300 ease-in-out hover:bg-accent hover:text-white"
-                    >
-                      View Details <ArrowRight className="w-3 h-3" />
-                    </Link>
+                    <Button asChild variant="outline">
+                      <Link href={`/our-packages/${travelPackage?.slug}`}>
+                        View Details <ArrowRight className="w-3 h-3" />
+                      </Link>
+                    </Button>
                   </div>
                 </div>
               ))}
