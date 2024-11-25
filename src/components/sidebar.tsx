@@ -1,9 +1,12 @@
-import React from "react";
-import { Logo } from "./logo";
-import Link from "next/link";
+"use client";
+
 import { routes } from "@/data/routes";
 import { cn } from "@/lib/utils";
 import { X } from "lucide-react";
+import Link from "next/link";
+import React, { useEffect } from "react";
+import { Logo } from "./logo";
+import { Button } from "./ui/button";
 
 interface SidebarProps {
   isOpen: boolean;
@@ -16,6 +19,12 @@ export const Sidebar: React.FC<SidebarProps> = ({
   toggleSidebar,
   pathname,
 }) => {
+  useEffect(() => {
+    if (isOpen) {
+      toggleSidebar();
+    }
+  }, [pathname]);
+
   return (
     <div
       className={cn(
@@ -25,13 +34,14 @@ export const Sidebar: React.FC<SidebarProps> = ({
     >
       <div className="p-4 flex items-center justify-between gap-4">
         <Logo />
-        <button
+        <Button
           onClick={toggleSidebar}
           aria-label="Navigation Toggle Button"
-          className="bg-accent p-2 rounded shadow text-white lg:hidden"
+          variant="outline"
+          size="icon"
         >
           <X className="w-5 h-5" />
-        </button>
+        </Button>
       </div>
       <nav className="flex flex-col gap-4 mt-4 px-2">
         {routes.map(
@@ -42,7 +52,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
               className={cn(
                 "p-2 rounded whitespace-nowrap transition duration-300 ease-in-out font-medium",
                 pathname === href
-                  ? "bg-accent text-white"
+                  ? "bg-primary text-white"
                   : "bg-white hover:bg-gray-100 text-primary"
               )}
             >

@@ -79,7 +79,7 @@ const SinglePackagePage = async ({
                     {selectedPackage?.includes.map(
                       (include: string, index: number) => (
                         <li className="flex items-center gap-2" key={index}>
-                          <Check className="w-4 h-4 text-green-500" />{" "}
+                          <Check className="w-4 h-4 text-green-500 shrink-0" />{" "}
                           <span>{include}</span>
                         </li>
                       )
@@ -94,7 +94,7 @@ const SinglePackagePage = async ({
                     {selectedPackage?.includes.map(
                       (include: string, index: number) => (
                         <li className="flex items-center gap-2" key={index}>
-                          <X className="text-red-500 w-4 h-4" />{" "}
+                          <X className="text-red-500 w-4 h-4 shrink-0" />{" "}
                           <span>{include}</span>
                         </li>
                       )

@@ -23,19 +23,35 @@ const ContactPage = () => {
             </p>
             <h3 className="mt-8 mb-2 text-xl font-medium">Details</h3>
             <div className="flex flex-col gap-2 text-text">
-              <Link href="tel:00" className="flex items-center gap-2 ">
-                <PhoneCall className="w- 4 h-4" /> +91 7889737464
-              </Link>
+              <div className="flex items-start gap-2">
+                <PhoneCall className="w- 4 h-4 mt-1 shrink-0" />
+                <div className="flex flex-col gap-1">
+                  <Link
+                    href="tel:+917006853438"
+                    className="flex items-center gap-2 "
+                  >
+                    +91 7006 853 438
+                  </Link>
+                  <Link
+                    href="tel:+919797324071"
+                    className="flex items-center gap-2 "
+                  >
+                    +91 9797 324 071
+                  </Link>
+                </div>
+              </div>
               <Link
                 href="mailto:info@ecodiscovertravel.com"
-                className="flex items-center gap-2 "
+                className="flex items-start gap-2 "
               >
-                <Mail className="w- 4 h-4" /> info@ecodiscovertravel.com
+                <Mail className="w- 4 h-4 mt-1  shrink-0" />{" "}
+                info@ecodiscovertravel.com
               </Link>
-              <div className="flex items-center gap-2 ">
-                <MapPin className="w- 4 h-4" />{" "}
+              <div className="flex items-start gap-2 ">
+                <MapPin className="w- 4 h-4 mt-1 shrink-0" />{" "}
                 <address>
-                  Eco Discover Travel, Srinagar, Jammu & Kashmir, India
+                  Eco Discover Travel, Near Akad Park, Pahalgam, Jammu &
+                  Kashmir, India
                 </address>
               </div>
             </div>
