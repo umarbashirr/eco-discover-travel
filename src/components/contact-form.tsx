@@ -16,8 +16,12 @@ import {
 } from "./ui/form";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
+import { toast } from "sonner";
+import { Loader2 } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export const ContactForm = () => {
+  const router = useRouter();
   const form = useForm<z.infer<typeof ContactFormSchema>>({
     resolver: zodResolver(ContactFormSchema),
     defaultValues: {
@@ -30,7 +34,27 @@ export const ContactForm = () => {
   });
 
   const submitHandler = async (values: z.infer<typeof ContactFormSchema>) => {
-    console.log(values);
+    try {
+      const response = await fetch("/api/v1/ticket", {
+        method: "POST",
+        body: JSON.stringify(values),
+      });
+
+      const result = await response.json();
+
+      if (response.status !== 200) {
+        toast.error("Error while submission. Please retry!");
+        return;
+      }
+
+      toast.success(
+        "Ticket submitted successfully! Redirecting to homepage..."
+      );
+      form.reset();
+      router.push("/");
+    } catch (error: any) {
+      toast.error("Error while submission. Please retry!");
+    }
   };
 
   return (
@@ -46,7 +70,11 @@ export const ContactForm = () => {
             <FormItem>
               <FormLabel>Name</FormLabel>
               <FormControl>
-                <Input {...field} placeholder="Enter your name..." />
+                <Input
+                  {...field}
+                  placeholder="Enter your name..."
+                  disabled={form.formState.isSubmitting}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -59,7 +87,11 @@ export const ContactForm = () => {
             <FormItem>
               <FormLabel>Email</FormLabel>
               <FormControl>
-                <Input {...field} placeholder="Enter your email..." />
+                <Input
+                  {...field}
+                  placeholder="Enter your email..."
+                  disabled={form.formState.isSubmitting}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -72,7 +104,11 @@ export const ContactForm = () => {
             <FormItem>
               <FormLabel>Phone Number</FormLabel>
               <FormControl>
-                <Input {...field} placeholder="Enter your phone number..." />
+                <Input
+                  {...field}
+                  placeholder="Enter your phone number..."
+                  disabled={form.formState.isSubmitting}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -85,7 +121,11 @@ export const ContactForm = () => {
             <FormItem>
               <FormLabel>Subject</FormLabel>
               <FormControl>
-                <Input {...field} placeholder="Enter your subject line..." />
+                <Input
+                  {...field}
+                  placeholder="Enter your subject line..."
+                  disabled={form.formState.isSubmitting}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -99,6 +139,7 @@ export const ContactForm = () => {
               <FormLabel>Message</FormLabel>
               <FormControl>
                 <Textarea
+                  disabled={form.formState.isSubmitting}
                   placeholder="Any question or concern.."
                   className="resize-none"
                   rows={10}
@@ -109,7 +150,16 @@ export const ContactForm = () => {
             </FormItem>
           )}
         />
-        <Button type="submit">Send now</Button>
+        <Button
+          type="submit"
+          disabled={form.formState.isSubmitting}
+          className="flex items-center justify-center text-center gap-2"
+        >
+          {form.formState.isSubmitting && (
+            <Loader2 className="w-4 h-4 animate-spin duration-700 ease-in-out repeat-infinite" />
+          )}
+          {form.formState.isSubmitting ? "Please wait..." : "Send now"}
+        </Button>
       </form>
     </Form>
   );
