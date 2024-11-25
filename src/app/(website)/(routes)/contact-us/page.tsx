@@ -18,7 +18,8 @@ const ContactPage = () => {
               Get in Touch
             </h2>
             <p className="text-sm text-text mt-2">
-              Reach us through your preferred channel. We're here to assist you.
+              Reach us through your preferred channel. We&apos;re here to assist
+              you.
             </p>
             <h3 className="mt-8 mb-2 text-xl font-medium">Details</h3>
             <div className="flex flex-col gap-2 text-text">
@@ -49,8 +50,8 @@ const ContactPage = () => {
               Write to Us{" "}
             </h2>
             <p className="text-sm text-text mt-2">
-              Have questions or need assistance? Fill out the form, and we'll
-              get back to you shortly.
+              Have questions or need assistance? Fill out the form, and
+              we&apos;ll get back to you shortly.
             </p>
             <ContactForm />
           </div>

@@ -1,13 +1,5 @@
 import { Container } from "@/components/container";
 import { PageHero } from "@/components/page-hero";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
 import Link from "next/link";
 
 const PrivacyPolicyPage = () => {

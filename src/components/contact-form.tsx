@@ -1,11 +1,13 @@
 "use client";
 
-import { useState } from "react";
-import { Button } from "./ui/button";
-import { useForm } from "react-hook-form";
-import * as z from "zod";
 import { ContactFormSchema } from "@/schemas/contact-form.schema";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { Loader2 } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { useForm } from "react-hook-form";
+import { toast } from "sonner";
+import * as z from "zod";
+import { Button } from "./ui/button";
 import {
   Form,
   FormControl,
@@ -16,9 +18,6 @@ import {
 } from "./ui/form";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
-import { toast } from "sonner";
-import { Loader2 } from "lucide-react";
-import { useRouter } from "next/navigation";
 
 export const ContactForm = () => {
   const router = useRouter();
@@ -40,7 +39,7 @@ export const ContactForm = () => {
         body: JSON.stringify(values),
       });
 
-      const result = await response.json();
+      await response.json();
 
       if (response.status !== 200) {
         toast.error("Error while submission. Please retry!");
@@ -53,6 +52,7 @@ export const ContactForm = () => {
       form.reset();
       router.push("/");
     } catch (error: any) {
+      console.error(error?.message);
       toast.error("Error while submission. Please retry!");
     }
   };

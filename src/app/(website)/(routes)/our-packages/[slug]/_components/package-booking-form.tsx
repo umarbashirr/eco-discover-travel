@@ -1,23 +1,21 @@
 "use client";
 
-import { ITravelPackage } from "@/interfaces/package.interface";
-import { PackageFormSchema } from "@/schemas/package-form.schema";
-import React, { useState } from "react";
-import { useForm } from "react-hook-form";
-import * as z from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
 import { Button } from "@/components/ui/button";
+import { Calendar } from "@/components/ui/calendar";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { addDays, format } from "date-fns";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 import {
   Select,
   SelectContent,
@@ -25,15 +23,17 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
-import { cn } from "@/lib/utils";
-import { CalendarIcon } from "lucide-react";
-import { Calendar } from "@/components/ui/calendar";
 import { Textarea } from "@/components/ui/textarea";
+import { ITravelPackage } from "@/interfaces/package.interface";
+import { cn } from "@/lib/utils";
+import { PackageFormSchema } from "@/schemas/package-form.schema";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { addDays, format } from "date-fns";
+import { CalendarIcon, Loader2 } from "lucide-react";
+import React from "react";
+import { useForm } from "react-hook-form";
+import { toast } from "sonner";
+import * as z from "zod";
 
 interface IPackageBookingForm {
   initialData: ITravelPackage | undefined;
@@ -64,6 +64,25 @@ export const PackageBookingForm: React.FC<IPackageBookingForm> = ({
 
   const submitHandler = async (values: z.infer<typeof PackageFormSchema>) => {
     console.log(values);
+    try {
+      const response = await fetch("/api/v1/package/order/checkout", {
+        method: "POST",
+        body: JSON.stringify(values),
+      });
+
+      if (response.status !== 200) {
+        toast.error("Error while submission. Please retry!");
+        return;
+      }
+
+      toast.success("Ticket submitted successfully!");
+      form.reset();
+      window.document.body.scrollTop = 0;
+      window.location.reload();
+    } catch (error: unknown) {
+      toast.error("Error while submission. Please retry!");
+      console.log(error);
+    }
   };
 
   return (
@@ -131,10 +150,7 @@ export const PackageBookingForm: React.FC<IPackageBookingForm> = ({
             render={({ field }) => (
               <FormItem>
                 <FormLabel>No. of Adults</FormLabel>
-                <Select
-                  onValueChange={field.onChange}
-                  defaultValue={field.value.toString()}
-                >
+                <Select onValueChange={field.onChange}>
                   <FormControl>
                     <SelectTrigger>
                       <SelectValue placeholder="Select total number of adults" />
@@ -158,10 +174,7 @@ export const PackageBookingForm: React.FC<IPackageBookingForm> = ({
             render={({ field }) => (
               <FormItem>
                 <FormLabel>No. of Children</FormLabel>
-                <Select
-                  onValueChange={field.onChange}
-                  defaultValue={field.value.toString()}
-                >
+                <Select onValueChange={field.onChange}>
                   <FormControl>
                     <SelectTrigger>
                       <SelectValue placeholder="Select total number of children" />
@@ -282,7 +295,16 @@ export const PackageBookingForm: React.FC<IPackageBookingForm> = ({
             </FormItem>
           )}
         />
-        <Button type="submit">Send now</Button>
+        <Button
+          type="submit"
+          disabled={form.formState.isSubmitting}
+          className="flex items-center justify-center text-center gap-2"
+        >
+          {form.formState.isSubmitting && (
+            <Loader2 className="w-4 h-4 animate-spin duration-700 ease-in-out repeat-infinite" />
+          )}
+          {form.formState.isSubmitting ? "Please wait..." : "Get Quote Now"}
+        </Button>
       </form>
     </Form>
   );

@@ -16,7 +16,7 @@ export const PackageFormSchema = z.object({
   phoneNumber: z.string(),
   totalAdults: z.string(),
   totalChildren: z.string(),
-  dateOfArrival: z.date(),
-  dateOfDeparture: z.date(),
+  dateOfArrival: z.coerce.date(),
+  dateOfDeparture: z.coerce.date(),
   comment: z.string().optional(),
 });

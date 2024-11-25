@@ -3,12 +3,11 @@
 import { routes } from "@/data/routes";
 import { Menu } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Container } from "./container";
 import { Logo } from "./logo";
 import { Sidebar } from "./sidebar";
-import { usePathname } from "next/navigation";
-import { cn } from "@/lib/utils";
 import { Button } from "./ui/button";
 import {
   NavigationMenu,

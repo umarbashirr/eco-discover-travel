@@ -3,7 +3,7 @@ import { DestinationsSlide } from "@/components/destinations-slide";
 import { Button } from "@/components/ui/button";
 import { TravelPackages } from "@/data/packages";
 import { ITravelPackage } from "@/interfaces/package.interface";
-import { ArrowRight, Calendar, ChevronRight, MapPin } from "lucide-react";
+import { ArrowRight, Calendar, MapPin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
