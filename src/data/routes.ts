@@ -27,7 +27,7 @@ export const otherRoutes = [
     label: "Terms & Conditions",
   },
   {
-    href: "/refund-cancellation-policy",
+    href: "/payment-refund-cancellation-policy",
     label: "Refund & Cancellation Policy",
   },
 ];

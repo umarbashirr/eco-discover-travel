@@ -4,6 +4,7 @@ import { TravelPackages } from "@/data/packages";
 import { ItineraryItem, ITravelPackage } from "@/interfaces/package.interface";
 import React from "react";
 import { PackageBookingForm } from "./_components/package-booking-form";
+import { Check, X } from "lucide-react";
 
 const SinglePackagePage = async ({
   params,
@@ -12,7 +13,7 @@ const SinglePackagePage = async ({
 }) => {
   const { slug } = await params;
 
-  const selectedPackage: ITravelPackage = TravelPackages.find(
+  const selectedPackage: ITravelPackage | undefined = TravelPackages.find(
     (tp) => tp.slug === slug
   );
 
@@ -63,6 +64,43 @@ const SinglePackagePage = async ({
                     </div>
                   )
                 )}
+              </div>
+            </div>
+            <div className="mt-8">
+              <h2 className="text-2xl font-semibold text-primary mb-4">
+                Costs
+              </h2>
+              <div className="flex flex-col space-y-4">
+                <div>
+                  <h3 className="text-lg font-medium text-primary">
+                    Cost Includes
+                  </h3>
+                  <ul className="list-disc flex flex-col gap-2 ml-8 mt-4">
+                    {selectedPackage?.includes.map(
+                      (include: string, index: number) => (
+                        <li className="flex items-center gap-2" key={index}>
+                          <Check className="w-4 h-4 text-green-500" />{" "}
+                          <span>{include}</span>
+                        </li>
+                      )
+                    )}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-lg font-medium text-primary">
+                    Cost Excludes
+                  </h3>
+                  <ul className="list-disc flex flex-col gap-2 ml-8 mt-4">
+                    {selectedPackage?.includes.map(
+                      (include: string, index: number) => (
+                        <li className="flex items-center gap-2" key={index}>
+                          <X className="text-red-500 w-4 h-4" />{" "}
+                          <span>{include}</span>
+                        </li>
+                      )
+                    )}
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

@@ -12,6 +12,8 @@ export interface ITravelPackage {
   itinerary: ItineraryItem[]; // Array of daily itinerary details
   image_gallery: string[]; // URL of the package image
   featured_image: string;
+  includes: string[];
+  excludes: string[];
 }
 
 export interface ItineraryItem {

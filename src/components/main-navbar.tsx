@@ -31,7 +31,7 @@ export const MainNavbar = () => {
       <div className="flex items-center w-full  h-20 sticky top-0 z-50 bg-white">
         <Container className="flex items-center justify-between">
           <Logo />
-          <NavigationMenu>
+          <NavigationMenu className="hidden lg:flex">
             <NavigationMenuList>
               {routes.map(
                 (
@@ -52,13 +52,15 @@ export const MainNavbar = () => {
             </NavigationMenuList>
           </NavigationMenu>
           <div className="flex items-center gap-4">
-            <button
+            <Button
               onClick={toggleSidebar}
               aria-label="Navigation Toggle Button"
-              className="bg-accent p-2 rounded shadow text-white lg:hidden"
+              size={"icon"}
+              variant="outline"
+              className="lg:hidden"
             >
               <Menu className="w-5 h-5" />
-            </button>
+            </Button>
             <Button variant="accent" asChild>
               <Link href="/contact-us">Book Now</Link>
             </Button>

@@ -36,7 +36,7 @@ import { Calendar } from "@/components/ui/calendar";
 import { Textarea } from "@/components/ui/textarea";
 
 interface IPackageBookingForm {
-  initialData: ITravelPackage;
+  initialData: ITravelPackage | undefined;
 }
 
 const countArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
