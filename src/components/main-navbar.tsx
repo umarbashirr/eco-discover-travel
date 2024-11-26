@@ -1,19 +1,21 @@
 "use client";
 
-import { routes } from "@/data/routes";
+import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import React, { useState } from "react";
 import { Container } from "./container";
 import { Logo } from "./logo";
 import { Sidebar } from "./sidebar";
 import { Button } from "./ui/button";
 import {
   NavigationMenu,
+  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
+  NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "./ui/navigation-menu";
 
@@ -32,22 +34,67 @@ export const MainNavbar = () => {
           <Logo />
           <NavigationMenu className="hidden lg:flex">
             <NavigationMenuList>
-              {routes.map(
-                (
-                  { href, label }: { href: string; label: string },
-                  index: number
-                ) => (
-                  <NavigationMenuItem key={index}>
-                    <Link legacyBehavior passHref href={href}>
-                      <NavigationMenuLink
-                        className={navigationMenuTriggerStyle()}
-                      >
-                        {label}
-                      </NavigationMenuLink>
-                    </Link>
-                  </NavigationMenuItem>
-                )
-              )}
+              <NavigationMenuItem>
+                <Link legacyBehavior passHref href={"/"}>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    Home
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link legacyBehavior passHref href={"/about-us"}>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    About Us
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuTrigger>Our Packages</NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                    <ListItem
+                      title="Kashmir Packages"
+                      href="/our-packages/kashmir-packages"
+                    />
+                    <ListItem
+                      title="Ladakh Packages"
+                      href="/our-packages/ladakh-packages"
+                    />
+                  </ul>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuTrigger>Our Hotels</NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                    <ListItem title="The Ladakh Avenue" href="#">
+                      3 Star Premium Hotel. Coming Soon
+                    </ListItem>
+                    <ListItem
+                      title="Hotel Malik Residency"
+                      href="https://hotelmalikresidencyleh.com"
+                      target="_blank"
+                    >
+                      3 Star Deluxe Hotel
+                    </ListItem>
+                    <ListItem
+                      title="Hotel Pahalgam View"
+                      href="https://hotelpahalgamview.com"
+                      target="_blank"
+                    >
+                      {" "}
+                      3 Star Deluxe Central Heated Hotel
+                    </ListItem>
+                  </ul>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link legacyBehavior passHref href={"/contact-us"}>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    Contact Us
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
           <div className="flex items-center gap-4">
@@ -74,3 +121,29 @@ export const MainNavbar = () => {
     </>
   );
 };
+
+const ListItem = React.forwardRef<
+  React.ElementRef<"a">,
+  React.ComponentPropsWithoutRef<"a">
+>(({ className, title, children, ...props }, ref) => {
+  return (
+    <li className="space-y-2">
+      <NavigationMenuLink asChild>
+        <a
+          ref={ref}
+          className={cn(
+            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            className
+          )}
+          {...props}
+        >
+          <div className="text-sm font-medium leading-none">{title}</div>
+          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+            {children}
+          </p>
+        </a>
+      </NavigationMenuLink>
+    </li>
+  );
+});
+ListItem.displayName = "ListItem";

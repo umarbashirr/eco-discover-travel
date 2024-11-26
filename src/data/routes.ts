@@ -7,9 +7,15 @@ export const routes = [
     href: "/about-us",
     label: "About Us",
   },
+
   {
-    href: "/our-packages",
-    label: "Our Packages",
+    href: "/our-packages/kashmir-packages",
+    label: "Kashmir Packages",
+  },
+
+  {
+    href: "/our-packages/ladakh-packages",
+    label: "Ladakh Packages",
   },
   {
     href: "/contact-us",

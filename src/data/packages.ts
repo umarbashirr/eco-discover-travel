@@ -67,12 +67,7 @@ export const TravelPackages: ITravelPackage[] = [
         ],
       },
     ],
-    image_gallery: [
-      "https://example.com/images/kashmir1.jpg",
-      "https://example.com/images/kashmir2.jpg",
-      "https://example.com/images/kashmir3.jpg",
-      "https://example.com/images/kashmir4.jpg",
-    ],
+    image_gallery: ["/gulmarg-bg.jpg", "/pahalgam-bg.jpg", "/srinagar.jpg"],
     featured_image: "/pahalgam-bg.jpg",
     includes: [
       "Accommodation at all Destinations as per itinerary",
@@ -171,12 +166,7 @@ export const TravelPackages: ITravelPackage[] = [
         ],
       },
     ],
-    image_gallery: [
-      "https://example.com/images/kashmir5.jpg",
-      "https://example.com/images/kashmir6.jpg",
-      "https://example.com/images/kashmir7.jpg",
-      "https://example.com/images/kashmir8.jpg",
-    ],
+    image_gallery: ["/gulmarg.jpg", "/pahalgam-bg.jpg", "/srinagar.jpg"],
     featured_image: "/srinagar.jpg",
     includes: [
       "Accommodation at all Destinations as per itinerary",
@@ -282,12 +272,7 @@ export const TravelPackages: ITravelPackage[] = [
         ],
       },
     ],
-    image_gallery: [
-      "https://example.com/images/kashmir6n7d1.jpg",
-      "https://example.com/images/kashmir6n7d2.jpg",
-      "https://example.com/images/kashmir6n7d3.jpg",
-      "https://example.com/images/kashmir6n7d4.jpg",
-    ],
+    image_gallery: ["/gulmarg.jpg", "/pahalgam-bg.jpg", "/srinagar.jpg"],
     featured_image: "/gulmarg-bg.jpg",
     includes: [
       "Accommodation at all Destinations as per itinerary",
@@ -412,12 +397,7 @@ export const TravelPackages: ITravelPackage[] = [
         ],
       },
     ],
-    image_gallery: [
-      "https://example.com/images/kashmir7n8d1.jpg",
-      "https://example.com/images/kashmir7n8d2.jpg",
-      "https://example.com/images/kashmir7n8d3.jpg",
-      "https://example.com/images/kashmir7n8d4.jpg",
-    ],
+    image_gallery: ["/gulmarg.jpg", "/pahalgam-bg.jpg", "/srinagar.jpg"],
     featured_image: "/hero.jpg",
     includes: [
       "Accommodation at all Destinations as per itinerary",
@@ -504,10 +484,11 @@ export const TravelPackages: ITravelPackage[] = [
       },
     ],
     image_gallery: [
-      "https://example.com/images/ladakh1.jpg",
-      "https://example.com/images/ladakh2.jpg",
-      "https://example.com/images/ladakh3.jpg",
-      "https://example.com/images/ladakh4.jpg",
+      "/ladakh-2.jpg",
+      "/ladakh-3.jpg",
+      "/ladakh-4.jpg",
+      "/ladakh-5.jpg",
+      "/ladakh-6.jpg",
     ],
     featured_image: "/nubra.jpg",
     includes: [
@@ -611,10 +592,11 @@ export const TravelPackages: ITravelPackage[] = [
       },
     ],
     image_gallery: [
-      "https://example.com/images/ladakh1.jpg",
-      "https://example.com/images/ladakh2.jpg",
-      "https://example.com/images/ladakh3.jpg",
-      "https://example.com/images/ladakh4.jpg",
+      "/ladakh-2.jpg",
+      "/ladakh-3.jpg",
+      "/ladakh-4.jpg",
+      "/ladakh-5.jpg",
+      "/ladakh-6.jpg",
     ],
     featured_image: "/leh.jpg",
     includes: [
@@ -725,10 +707,11 @@ export const TravelPackages: ITravelPackage[] = [
       },
     ],
     image_gallery: [
-      "https://example.com/images/ladakh1.jpg",
-      "https://example.com/images/ladakh2.jpg",
-      "https://example.com/images/ladakh3.jpg",
-      "https://example.com/images/ladakh4.jpg",
+      "/ladakh-2.jpg",
+      "/ladakh-3.jpg",
+      "/ladakh-4.jpg",
+      "/ladakh-5.jpg",
+      "/ladakh-6.jpg",
     ],
     featured_image: "/pangong.jpg",
     includes: [

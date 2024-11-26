@@ -28,7 +28,7 @@ const AboutPage = () => {
             </p>
             <h3 className="mt-6 text-xl font-medium">Key Highlights</h3>
             <ul className="list-disc ml-8 mt-4 text-muted-foreground flex flex-col gap-2">
-              <li>Over [X years] of expertise in the travel industry</li>
+              <li>Over 10 of expertise in the travel industry</li>
               <li>Specializing in Kashmir and Ladakh tours</li>
               <li>
                 A focus on authentic experiences and sustainable travel

@@ -65,7 +65,7 @@ const HomePage = () => {
       </section>
 
       {/* Recent Packages */}
-      <section id="recentPackages" className="my-12 md:my-24">
+      {/* <section id="recentPackages" className="my-12 md:my-24">
         <Container>
           <h1 className="text-2xl md:text-4xl font-semibold text-center">
             Explore Our Latest Travel Packages
@@ -121,7 +121,7 @@ const HomePage = () => {
             )}
           </div>
         </Container>
-      </section>
+      </section> */}
 
       {/* Kashmir Packages */}
       <section id="kashmirPackages" className="my-12 md:my-24">

@@ -1,10 +1,9 @@
 import { Container } from "@/components/container";
-import { PageHero } from "@/components/page-hero";
 import { TravelPackages } from "@/data/packages";
 import { ItineraryItem, ITravelPackage } from "@/interfaces/package.interface";
-import React from "react";
-import { PackageBookingForm } from "./_components/package-booking-form";
 import { Check, X } from "lucide-react";
+import { PackageBookingForm } from "./_components/package-booking-form";
+import { SliderContainer } from "./_components/slider-container";
 
 const SinglePackagePage = async ({
   params,
@@ -19,13 +18,17 @@ const SinglePackagePage = async ({
 
   return (
     <>
-      <PageHero
+      {/* <PageHero
         title={selectedPackage?.title || ""}
         tagline="Experience the journey of a lifetime with our thoughtfully curated package."
-      />
+      /> */}
+      <SliderContainer data={selectedPackage?.image_gallery} />
       <section className="my-12 md:my-24">
         <Container className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-10">
           <div className="border rounded-xl p-6 shadow">
+            <h1 className="text-3xl font-semibold mb-4">
+              {selectedPackage?.title}
+            </h1>
             <h2 className="text-2xl font-semibold text-primary mb-4">
               Overview
             </h2>
