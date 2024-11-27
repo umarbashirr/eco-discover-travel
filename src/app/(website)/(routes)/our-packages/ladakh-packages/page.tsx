@@ -15,8 +15,9 @@ const LadakhPackages = () => {
   return (
     <>
       <PageHero
-        title="Our Kashmir Packages"
+        title="Our Ladakh Packages"
         tagline="Explore our specially curated travel packages designed for unforgettable adventures in Kashmir."
+        image="/ladakh-2.jpg"
       />
       <Container className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-12 md:my-24">
         {ladakhPackages.map((travelPackage: ITravelPackage, index: number) => (
@@ -33,7 +34,7 @@ const LadakhPackages = () => {
               <Link href={`/our-packages/${travelPackage?.slug}`}>
                 <h3 className="text-lg font-medium">{travelPackage.title}</h3>
               </Link>
-              <p className="text-sm text-text mt-4 line-clamp-2">
+              <p className="text-sm text-text mt-4 line-clamp-3">
                 {travelPackage?.short_desc}
               </p>
               <div className="py-2 border-t border-b my-4 flex items-center gap-4 text-text">

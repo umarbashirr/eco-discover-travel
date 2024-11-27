@@ -2,8 +2,6 @@
 
 import { Container } from "@/components/container";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick-theme.css";
-import "slick-carousel/slick/slick.css";
 
 export const SliderContainer = ({ data }: { data: string[] }) => {
   const settings = {

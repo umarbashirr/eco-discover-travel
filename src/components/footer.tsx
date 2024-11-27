@@ -7,7 +7,7 @@ import { Separator } from "./ui/separator";
 export const Footer = () => {
   return (
     <footer>
-      <div className="pt-24 pb-12 bg-primary">
+      <div className="pt-24 pb-6 bg-primary">
         <Container className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr] gap-10">
           <div className="w-full md:max-w-[60%]">
             <Link href="/" className="text-xl font-bold text-white">

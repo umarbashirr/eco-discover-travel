@@ -10,6 +10,7 @@ const ContactPage = () => {
       <PageHero
         title="Contact Us"
         tagline="We're here to help you plan your perfect journey. Reach out to us for any inquiries or assistance."
+        image="/support.jpg"
       />
       <section className="my-12 md:my-24 w-full">
         <Container className="w-full flex flex-col lg:flex-row  gap-10">
