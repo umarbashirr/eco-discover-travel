@@ -16,7 +16,7 @@ const LadakhPackages = () => {
     <>
       <PageHero
         title="Our Ladakh Packages"
-        tagline="Explore our specially curated travel packages designed for unforgettable adventures in Kashmir."
+        tagline="Explore our specially curated travel packages designed for unforgettable adventures in ladakh."
         image="/ladakh-2.jpg"
       />
       <Container className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-12 md:my-24">
