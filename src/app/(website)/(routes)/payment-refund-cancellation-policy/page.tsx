@@ -15,7 +15,7 @@ const PaymentRefundCancellationPage = () => {
     <>
       <PageHero
         title="Payment, Refund and Cancellation Policy"
-        tagline="test"
+        tagline="Clear Policies for a Seamless Experience"
       />
       <Container className="my-12 md:my-24 lg:max-w-screen-lg">
         <p className="mb-4  text-muted-foreground">
@@ -47,8 +47,8 @@ const PaymentRefundCancellationPage = () => {
           <ul className="mt-2 list-disc ml-8 space-y-2">
             <li>
               <strong>Email:</strong>{" "}
-              <Link href="mailto:hotels@ecodiscovertravel.com">
-                hotels@ecodiscovertravel.com
+              <Link href="mailto:info@ecodiscovertravel.com">
+                info@ecodiscovertravel.com
               </Link>
             </li>
           </ul>
@@ -111,7 +111,7 @@ const PaymentRefundCancellationPage = () => {
         </div>
         <p className="mt-4 text-muted-foreground">
           For any questions or further clarification, feel free to contact us
-          at: Email: hotels@ecodiscovertravel.com
+          at: Email: info@ecodiscovertravel.com
         </p>
       </Container>
     </>

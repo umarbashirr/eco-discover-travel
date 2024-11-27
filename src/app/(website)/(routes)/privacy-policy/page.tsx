@@ -5,7 +5,10 @@ import Link from "next/link";
 const PrivacyPolicyPage = () => {
   return (
     <>
-      <PageHero title="Privacy Policy" tagline="test" />
+      <PageHero
+        title="Privacy Policy"
+        tagline="Safeguarding Your Personal Information with Transparency"
+      />
       <Container className="my-12 md:my-24 lg:max-w-screen-lg">
         <p className="text-muted-foreground leading-loose">
           At <strong>Eco Discover Travel</strong>, your privacy is important to

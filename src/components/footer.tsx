@@ -3,6 +3,7 @@ import { Facebook, Instagram, Youtube } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "./container";
+import { Separator } from "./ui/separator";
 
 export const Footer = () => {
   return (
@@ -10,13 +11,8 @@ export const Footer = () => {
       <div className="pt-24 pb-12 bg-primary">
         <Container className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr] gap-10">
           <div className="w-full md:max-w-[60%]">
-            <Link href="/">
-              <Image
-                src="/logo-white.svg"
-                alt="Eco Discover Travel Logo"
-                width={173}
-                height={36}
-              />
+            <Link href="/" className="text-xl font-bold text-white">
+              Eco Discover Travel
             </Link>
             <p className="text-gray-300 text-sm mt-4 leading-loose">
               We offer travel packages to Kashmir and Ladakh, focusing on
@@ -78,6 +74,23 @@ export const Footer = () => {
               )}
             </nav>
           </div>
+        </Container>
+        <Separator orientation="horizontal" className="my-6" />
+        <Container className="flex flex-col items-center justify-center md:flex-row md:justify-between gap-4">
+          <p className="text-sm text-white">
+            Copyrighted &copy; {new Date().getFullYear()} by Eco Discover
+            Travel. All Rights Reserved
+          </p>
+          <p className="text-sm text-white">
+            Design & Developed by{" "}
+            <Link
+              className="text-indigo-500 font-medium"
+              href="https://www.cooltechdesign.com"
+              target="_blank"
+            >
+              Cool Tech Design
+            </Link>
+          </p>
         </Container>
       </div>
     </footer>

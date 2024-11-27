@@ -29,7 +29,7 @@ export const MainNavbar = () => {
 
   return (
     <>
-      <div className="flex items-center w-full  h-20 sticky top-0 z-50 bg-white">
+      <div className="flex items-center w-full  h-24 sticky top-0 z-50 bg-white">
         <Container className="flex items-center justify-between">
           <Logo />
           <NavigationMenu className="hidden lg:flex">

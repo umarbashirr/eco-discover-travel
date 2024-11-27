@@ -75,9 +75,7 @@ export const TravelPackages: ITravelPackage[] = [
       "Comfortable non-AC Innova/Xylo/Tempo for all days as per the itinerary",
       "Reliable, experienced, and adept English-speaking local driver with great knowledge of the area and the terrain",
       "Driver charges, driver accommodation, fuel, and inter-state toll",
-      "Inner Line Permit",
       "Welcome Drink (Kashmir saffron tea)",
-      "1 Medium-sized oxygen cylinder",
       "First Aid Box",
       "Guide",
     ],
@@ -174,9 +172,8 @@ export const TravelPackages: ITravelPackage[] = [
       "Comfortable non-AC Innova/Xylo/Tempo for all days as per the itinerary",
       "Reliable, experienced, and adept English-speaking local driver with great knowledge of the area and the terrain",
       "Driver charges, driver accommodation, fuel, and inter-state toll",
-      "Inner Line Permit",
+
       "Welcome Drink (Kashmir saffron tea)",
-      "1 Medium-sized oxygen cylinder",
       "First Aid Box",
       "Guide",
     ],
@@ -280,9 +277,7 @@ export const TravelPackages: ITravelPackage[] = [
       "Comfortable non-AC Innova/Xylo/Tempo for all days as per the itinerary",
       "Reliable, experienced, and adept English-speaking local driver with great knowledge of the area and the terrain",
       "Driver charges, driver accommodation, fuel, and inter-state toll",
-      "Inner Line Permit",
       "Welcome Drink (Kashmir saffron tea)",
-      "1 Medium-sized oxygen cylinder",
       "First Aid Box",
       "Guide",
     ],
@@ -405,9 +400,7 @@ export const TravelPackages: ITravelPackage[] = [
       "Comfortable non-AC Innova/Xylo/Tempo for all days as per the itinerary",
       "Reliable, experienced, and adept English-speaking local driver with great knowledge of the area and the terrain",
       "Driver charges, driver accommodation, fuel, and inter-state toll",
-      "Inner Line Permit",
       "Welcome Drink (Kashmir saffron tea)",
-      "1 Medium-sized oxygen cylinder",
       "First Aid Box",
       "Guide",
     ],
@@ -437,7 +430,7 @@ export const TravelPackages: ITravelPackage[] = [
     highlights: [
       "Arrive in Leh and acclimatize to the high-altitude atmosphere.",
       "Visit the historical and cultural sites of Leh, including the Hall of Fame, Magnetic Hill, Gurudwara Pather Sahib, and Leh Palace.",
-      "Travel to Nubra Valley via Khardungla Top, the world's highest motorable road.",
+      "Travel to Nubra Valley via Khardungla Top, the world's second highest motorable road.",
       "Explore the Diskit Monastery and take a camel ride on the white sand dunes of Hundar.",
       "Journey to Pangong Lake through the Shayok River Road and witness the changing colors of the lake.",
       "Return to Leh via Changla Pass and visit Thiksey Monastery, Shey Palace, and Rancho School.",
@@ -466,7 +459,7 @@ export const TravelPackages: ITravelPackage[] = [
       {
         title: "Leh to Nubra Valley (140kms / 4hrs)",
         details: [
-          "Drive to Nubra Valley, passing through Khardungla Top, the highest motorable road in the world.",
+          "Drive to Nubra Valley, passing through Khardungla Top, the second highest motorable road in the world.",
           "Visit the Diskit Monastery, the oldest and largest in Nubra Valley.",
           "Check into your hotel and take an afternoon trip to the white sand dunes of Hundar.",
           "Optional camel ride on the double-humped camels (at your own expense).",
@@ -529,7 +522,7 @@ export const TravelPackages: ITravelPackage[] = [
     highlights: [
       "Arrive in Leh, acclimatize to the high-altitude atmosphere.",
       "Explore the local attractions of Leh, including the Hall of Fame, Magnetic Hill, and Leh Palace.",
-      "Travel to Nubra Valley via Khardungla Top, the highest motorable road in the world.",
+      "Travel to Nubra Valley via Khardungla Top, the 2nd highest motorable road in the world.",
       "Visit the Diskit Monastery and experience the camel ride at Hundar's white sand dunes.",
       "Journey to Pangong Lake via the scenic Shayok River Road.",
       "Return to Leh via Changla Pass, and visit Thiksey Monastery, Shey Palace, and Rancho School.",
@@ -577,7 +570,7 @@ export const TravelPackages: ITravelPackage[] = [
         title: "Pangong Lake to Leh via Changla Pass (150kms / 5hrs)",
         details: [
           "Leave Pangong Lake early to catch a mesmerizing sunrise.",
-          "Drive back to Leh via the Changla Pass (5347m), the world's second-highest motorable road.",
+          "Drive back to Leh via the Changla Pass (5347m), the world's second highest motorable road.",
           "Enroute, visit Thiksey Monastery and Shey Palace.",
           "If time permits, visit Rancho School.",
           "Overnight stay in Leh.",
@@ -637,7 +630,7 @@ export const TravelPackages: ITravelPackage[] = [
     highlights: [
       "Arrive in Leh and acclimatize to the high-altitude atmosphere.",
       "Visit the historical and cultural landmarks of Leh including the Hall of Fame, Magnetic Hill, and Leh Palace.",
-      "Travel to Nubra Valley via Khardungla Top, the world’s highest motorable road.",
+      "Travel to Nubra Valley via Khardungla Top, the world’s second highest motorable road.",
       "Explore Turtuk, a charming village on the India-Pakistan border with Balti culture and apricot orchards.",
       "Journey to Pangong Lake via the scenic Shayok River Road.",
       "Return to Leh via Changla Pass, the world's second-highest motorable road, and explore local monasteries and historical sites.",
@@ -735,6 +728,601 @@ export const TravelPackages: ITravelPackage[] = [
       "Medical and Travel Insurance",
       "Additional costs due to flight cancellations, roadblocks, natural calamities, and natural fury",
       "Adventure activity costs (Pony ride, camel safari, rafting, paragliding, mountain biking, etc.)",
+    ],
+  },
+  {
+    title: "7N 8D Trip to Ladakh Valley",
+    slug: "ladakh-7n-8d-trip",
+    short_desc:
+      "An 8-day journey through the mesmerizing landscapes of Leh, Nubra Valley, Pangong Lake, and Kargil.",
+    overview:
+      "Discover the stunning valleys of Ladakh in this 7-night, 8-day trip. Experience breathtaking high-altitude adventures, serene monasteries, and cultural gems in Leh, Nubra Valley, Pangong Lake, and Kargil.",
+    duration: {
+      days: 8,
+      nights: 7,
+    },
+    destination: "Ladakh",
+    highlights: [
+      "Arrive in Leh and acclimatize to the high-altitude atmosphere.",
+      "Explore Leh’s cultural sites like Leh Palace and Shanti Stupa.",
+      "Drive to Kargil via Fotula Pass and Lamayuru Monastery.",
+      "Visit Drass War Memorial and the Hall of Fame museum.",
+      "Travel to Nubra Valley via Khardungla Top, the world's highest motorable road.",
+      "Explore Diskit Monastery and enjoy a camel ride at Hundar sand dunes.",
+      "Journey to Turtuk, the northernmost village in India.",
+      "Witness the changing colors of Pangong Lake and return to Leh via Changla Pass.",
+    ],
+    itinerary: [
+      {
+        title: "Arrival in Leh",
+        details: [
+          "Touch down in Leh at an elevation of 3500m.",
+          "Check into your hotel and spend the day acclimatizing to the altitude.",
+          "Evening stroll through Leh Market.",
+          "Visit Leh Palace and Shanti Stupa.",
+          "Overnight stay in Leh.",
+        ],
+      },
+      {
+        title: "Leh to Kargil (250km / 4hrs)",
+        details: [
+          "After breakfast, drive to Kargil via Fotula Pass (4,108m).",
+          "Stop at Lamayuru Monastery, one of Ladakh's oldest monasteries.",
+          "Cross Namika La, known as the 'Pillar of the Sky Pass.'",
+          "Arrive in Kargil and check into your hotel.",
+          "Overnight stay in Kargil.",
+        ],
+      },
+      {
+        title: "Kargil - Drass - Leh (310km / 6hrs)",
+        details: [
+          "Visit the Drass War Memorial, a tribute to the 1999 Kargil War heroes.",
+          "Drive back to Leh with stops at the Hall of Fame and Magnetic Hill.",
+          "Visit Gurudwara Pather Sahib and Sangam Spituk (Zanskar-Indus confluence).",
+          "Overnight stay in Leh.",
+        ],
+      },
+      {
+        title: "Leh to Nubra Valley (140km / 4hrs)",
+        details: [
+          "Travel to Nubra Valley via Khardungla Top (5,570m), the world’s highest motorable road.",
+          "Visit Diskit Monastery, the oldest in Nubra Valley.",
+          "Check into your hotel and explore the white sand dunes at Hundar.",
+          "Optional camel ride on double-humped camels (at your own expense).",
+          "Overnight stay in Nubra Valley.",
+        ],
+      },
+      {
+        title: "Nubra Valley to Turtuk (80km / 3hrs)",
+        details: [
+          "Journey to Turtuk, the northernmost village in India, along the Shayok River.",
+          "Explore Turtuk’s orchards and unique Balti culture.",
+          "Optional visit to Thang village, the last outpost before Pakistan-administered territory.",
+          "Return to Nubra Valley for an overnight stay.",
+        ],
+      },
+      {
+        title: "Nubra Valley to Pangong Lake (150km / 5hrs)",
+        details: [
+          "Travel from Nubra Valley to Pangong Lake via the Shayok River Road.",
+          "Witness the changing colors of Pangong Lake.",
+          "Check into your campsite by the lake.",
+          "Overnight stay at Pangong Lake.",
+        ],
+      },
+      {
+        title: "Pangong Lake to Leh via Changla Pass (150km / 5hrs)",
+        details: [
+          "Start the day with a sunrise view at Pangong Lake.",
+          "Drive back to Leh via Changla Pass (5,347m), the world’s second-highest motorable road.",
+          "Visit Thiksey Monastery, Shey Palace, and Rancho School enroute.",
+          "Overnight stay in Leh.",
+        ],
+      },
+      {
+        title: "Departure from Leh",
+        details: [
+          "Bid farewell to Ladakh and transfer to Leh airport for your departure.",
+        ],
+      },
+    ],
+    image_gallery: [
+      "/ladakh-2.jpg",
+      "/ladakh-3.jpg",
+      "/ladakh-4.jpg",
+      "/ladakh-5.jpg",
+      "/ladakh-6.jpg",
+    ],
+    featured_image: "/ladakh-3.jpg",
+    includes: [
+      "Accommodation at all destinations as per itinerary.",
+      "Dinner and breakfast at all destinations as per itinerary.",
+      "Comfortable non-AC vehicle for all days as per the itinerary.",
+      "Experienced English-speaking local driver with knowledge of the terrain.",
+      "Driver charges, driver accommodation, fuel, and inter-state toll.",
+      "Inner Line Permit.",
+      "Welcome drink (Kashmiri saffron tea).",
+      "1 medium-sized oxygen cylinder.",
+      "First aid box.",
+    ],
+    excludes: [
+      "Personal expenses, tips, and meals not mentioned in the itinerary.",
+      "Costs arising from unforeseen circumstances like medical emergencies or natural calamities.",
+      "Monastery and museum entrance fees.",
+      "Airfare to/from Leh.",
+      "Medical and travel insurance.",
+      "Adventure activity costs (camel safari, rafting, mountain biking, etc.).",
+    ],
+  },
+  {
+    title: "08N 09D Trip to Ladakh Valley",
+    slug: "ladakh-8n-9d-trip",
+    short_desc:
+      "An extensive 9-day journey exploring Leh, Nubra, Turtuk, Siachen, Pangong, and Tsomoriri.",
+    overview:
+      "Embark on an unforgettable 8-night, 9-day adventure across the stunning landscapes of Ladakh, visiting iconic destinations like Nubra Valley, Turtuk, Pangong Lake, and the pristine Tsomoriri Lake.",
+    duration: {
+      days: 9,
+      nights: 8,
+    },
+    destination: "Ladakh",
+    highlights: [
+      "Explore Leh and acclimatize to the high-altitude atmosphere.",
+      "Visit Sham Valley, Magnetic Hill, and cultural landmarks like Gurudwara Pather Sahib and Shanti Stupa.",
+      "Drive through Khardungla Top to Nubra Valley, Diskit Monastery, and the Hundar Sand Dunes.",
+      "Experience the Balti culture in Turtuk and witness the beauty of Shayok River.",
+      "Visit the Siachen Base Camp, the highest battleground in the world.",
+      "Marvel at Pangong Lake and its changing colors.",
+      "Explore Tsomoriri Lake, a high-altitude sanctuary of beauty and tranquility.",
+    ],
+    itinerary: [
+      {
+        title: "Day 1: Arrival in Leh",
+        details: [
+          "Arrive in Leh at an elevation of 3500m and check into the hotel.",
+          "Spend the day acclimatizing to the high altitude.",
+          "Take a leisurely walk through the local market in the evening.",
+          "Overnight stay in Leh.",
+        ],
+      },
+      {
+        title: "Day 2: Leh Local Sightseeing - Sham Valley",
+        details: [
+          "Visit the Hall of Fame, Magnetic Hill, and Sangam Spituk (confluence of Zanskar and Indus Rivers).",
+          "Explore Gurudwara Pather Sahib, Leh Palace, and Shanti Stupa.",
+          "Return to the hotel for an overnight stay in Leh.",
+        ],
+      },
+      {
+        title: "Day 3: Leh to Nubra Valley (140km / 4hrs approx.)",
+        details: [
+          "Drive to Nubra Valley via Khardungla Top, the highest motorable road at 5570m.",
+          "Visit Diskit Monastery and check in at your hotel.",
+          "Enjoy a camel ride on the white sand dunes at Hundar (at your own expense).",
+          "Overnight stay in Nubra Valley.",
+        ],
+      },
+      {
+        title: "Day 4: Nubra Valley to Turtuk and Back (80km / 3hrs approx.)",
+        details: [
+          "Travel to Turtuk, the northernmost village of India near the Pakistan border.",
+          "Explore the Balti culture, apricot orchards, and historical artifacts.",
+          "Return to Nubra Valley for an overnight stay.",
+        ],
+      },
+      {
+        title: "Day 5: Nubra to Siachen Base Camp (130km / 4hrs approx.)",
+        details: [
+          "Drive to Siachen Base Camp, the world's highest battleground.",
+          "Visit Panamik Hot Springs and interact with army personnel at the base.",
+          "Return to Nubra via Sumoor for an overnight stay.",
+        ],
+      },
+      {
+        title: "Day 6: Nubra to Pangong Lake (150km / 5hrs approx.)",
+        details: [
+          "Travel to Pangong Lake via the scenic Shayok River Road.",
+          "Marvel at the changing colors of the lake and enjoy a peaceful sunset.",
+          "Stay overnight near Pangong Lake.",
+        ],
+      },
+      {
+        title: "Day 7: Pangong Lake to Tsomoriri Lake (220km / 6-7hrs approx.)",
+        details: [
+          "Drive to Tsomoriri Lake via the Chanthang plateau.",
+          "Stop at Puga Valley and Chusul en route.",
+          "Enjoy the pristine beauty of the lake and the surrounding landscape.",
+          "Stay overnight in a tented camp at Tsomoriri.",
+        ],
+      },
+      {
+        title:
+          "Day 8: Tsomoriri Lake to Leh via Tso Kar Lake (240km / 7-8hrs approx.)",
+        details: [
+          "Witness a serene sunrise at Tsomoriri Lake.",
+          "Visit Tso Kar Lake during the return journey to Leh.",
+          "Arrive in Leh and check into your hotel for an overnight stay.",
+        ],
+      },
+      {
+        title: "Day 9: Departure from Leh",
+        details: [
+          "Check out from the hotel and transfer to Leh airport.",
+          "Conclude your Ladakh adventure.",
+        ],
+      },
+    ],
+    image_gallery: [
+      "/ladakh-2.jpg",
+      "/ladakh-3.jpg",
+      "/ladakh-4.jpg",
+      "/ladakh-5.jpg",
+      "/ladakh-6.jpg",
+    ],
+    featured_image: "/ladakh-6.jpg",
+    includes: [
+      "Accommodation at all destinations as per itinerary.",
+      "Dinner and breakfast at all destinations as per itinerary.",
+      "Comfortable non-AC vehicles for all days as per the itinerary.",
+      "Experienced English-speaking local driver.",
+      "Driver charges, accommodation, fuel, and inter-state tolls.",
+      "Inner Line Permit.",
+      "Welcome drink (Kashmiri saffron tea).",
+      "One medium-sized oxygen cylinder.",
+      "First aid box.",
+    ],
+    excludes: [
+      "Personal expenses, tips, beverages, and meals not mentioned in the itinerary.",
+      "Costs arising from unforeseen circumstances like medical emergencies, natural calamities, etc.",
+      "Entrance fees for monasteries and museums.",
+      "Airfare to and from Leh or any other destination.",
+      "Medical and travel insurance.",
+      "Additional costs for activities like rafting, camel rides, or mountain biking.",
+    ],
+  },
+  {
+    title: "10N 11D Trip to Ladakh Valley",
+    slug: "ladakh-10n-11d-trip",
+    short_desc:
+      "An immersive 11-day journey exploring Leh, Nubra, Turtuk, Pangong, Hanle, Tsomoriri, and more.",
+    overview:
+      "Discover the majestic landscapes and rich culture of Ladakh with this 10-night, 11-day itinerary covering the breathtaking valleys and lakes including Nubra, Turtuk, Pangong, Hanle, and Tsomoriri.",
+    duration: {
+      days: 11,
+      nights: 10,
+    },
+    destination: "Ladakh",
+    highlights: [
+      "Acclimatize in Leh and explore local markets.",
+      "Visit the Hall of Fame, Magnetic Hill, and Gurudwara Pather Sahib.",
+      "Drive through Khardungla to Nubra Valley and ride on double-humped camels.",
+      "Discover the remote village of Turtuk and its rich Balti heritage.",
+      "Experience the serenity of Pangong Lake and its stunning color-changing waters.",
+      "Visit the Hanle Observatory and explore the scenic Changthang region.",
+      "Explore Tsomoriri Lake and its surrounding tranquil beauty.",
+    ],
+    itinerary: [
+      {
+        title: "Day 1: Arrive in Leh",
+        details: [
+          "Touch down in Leh at an elevation of 3500m and check into your hotel.",
+          "Spend the day acclimatizing and enjoy a leisurely walk through Leh's markets.",
+          "Overnight stay in Leh.",
+        ],
+      },
+      {
+        title: "Day 2: Local Sightseeing - Sham Valley",
+        details: [
+          "Visit Hall of Fame, Magnetic Hill, Gurudwara Pather Sahib, and Sangam Spituk.",
+          "Explore Alchi, Likir, and Lamayuru monasteries.",
+          "Overnight stay in Leh.",
+        ],
+      },
+      {
+        title: "Day 3: Leh to Nubra Valley (140kms / 4hrs)",
+        details: [
+          "Drive to Nubra Valley via the world’s highest motorable road, Khardungla Pass.",
+          "Visit Diskit Monastery and explore the white sand dunes of Hundar.",
+          "Optional camel ride on the double-humped camels.",
+          "Overnight stay in Nubra Valley.",
+        ],
+      },
+      {
+        title: "Day 4: Nubra to Turtuk and Return (80 km / 3hrs)",
+        details: [
+          "Journey to Turtuk, the northernmost village in India, rich in Balti culture.",
+          "Visit orchards and historical landmarks, including the Thang village.",
+          "Return to Nubra for an overnight stay.",
+        ],
+      },
+      {
+        title: "Day 5: Nubra to Pangong Lake (150kms / 5hrs)",
+        details: [
+          "Travel via Shayok River Road to Pangong Lake at 4350m.",
+          "Enjoy the changing colors of the lake and a beautiful sunset.",
+          "Overnight stay at Pangong Lake.",
+        ],
+      },
+      {
+        title: "Day 6: Pangong Lake to Hanle (120 km / 4hrs)",
+        details: [
+          "Drive to the remote village of Hanle via Lukung and Chushul Valley.",
+          "Visit the Chandra Telescope at the Indian Institute of Astrophysics.",
+          "Overnight stay in Hanle.",
+        ],
+      },
+      {
+        title: "Day 7: Hanle to Tsomoriri Lake (161 km / 6hrs)",
+        details: [
+          "Travel to Tsomoriri Lake via Puga Valley and Kyon Tso.",
+          "Explore the tranquil Korzok village by the lake.",
+          "Overnight stay at Tsomoriri Lake.",
+        ],
+      },
+      {
+        title: "Day 8: Tsomoriri Lake to Leh via Tso Kar Lake (240km / 7-8hrs)",
+        details: [
+          "Drive back to Leh, passing by Tso Kar Lake and its unique salt flats.",
+          "Arrive in Leh and check in for an overnight stay.",
+        ],
+      },
+      {
+        title: "Day 9: Leh Local Leisure Day",
+        details: [
+          "Enjoy a day at leisure in Leh for shopping, relaxation, or additional sightseeing.",
+          "Optional visit to local attractions like Leh Palace or Thiksey Monastery.",
+          "Overnight stay in Leh.",
+        ],
+      },
+      {
+        title: "Day 10: Departure from Leh",
+        details: [
+          "Check out from the hotel and transfer to Leh airport.",
+          "End your Ladakh adventure with fond memories.",
+        ],
+      },
+    ],
+    image_gallery: [
+      "/ladakh-2.jpg",
+      "/ladakh-3.jpg",
+      "/ladakh-4.jpg",
+      "/ladakh-5.jpg",
+      "/ladakh-6.jpg",
+    ],
+    featured_image: "/ladakh-4.jpg",
+    includes: [
+      "Accommodation at all destinations as per the itinerary.",
+      "Breakfast and dinner at all destinations.",
+      "Comfortable non-AC vehicle for all days as per the itinerary.",
+      "Experienced English-speaking driver.",
+      "Driver charges, accommodation, fuel, and inter-state tolls.",
+      "Inner Line Permit.",
+      "Welcome drink (Kashmiri saffron tea).",
+      "Oxygen cylinder for emergency use.",
+      "First aid box.",
+    ],
+    excludes: [
+      "Personal expenses, tips, beverages, and meals not mentioned in the itinerary.",
+      "Costs arising from unforeseen circumstances like medical emergencies, natural calamities, etc.",
+      "Entrance fees for monuments and monasteries.",
+      "Airfare to and from Leh or other destinations.",
+      "Medical and travel insurance.",
+      "Optional activities like camel rides, rafting, or additional excursions.",
+    ],
+  },
+  {
+    title: "5N 6D Trip to Ladakh Valley from SXR",
+    slug: "ladakh-5n-6d-trip-sxr",
+    short_desc:
+      "An adventurous 6-day journey exploring the stunning landscapes of Sonmarg, Kargil, Leh, Nubra, Pangong, and more.",
+    overview:
+      "Embark on a 5-night, 6-day journey through the breathtaking valleys and lakes of Ladakh, covering iconic destinations like Sonmarg, Kargil, Leh, Nubra Valley, Pangong Lake, and more.",
+    duration: {
+      days: 6,
+      nights: 5,
+    },
+    destination: "Ladakh",
+    highlights: [
+      "Scenic drive through Sonmarg, Kargil, and Leh.",
+      "Visit to the Kargil War Memorial and Drass Village.",
+      "Journey through Fotula Pass and Lamayuru Monastery.",
+      "Explore Nubra Valley via Khardungla Pass.",
+      "Camel ride on double-humped camels at Hundar Sand Dunes.",
+      "Marvel at the color-changing waters of Pangong Lake.",
+      "Cross Changla Pass, the world's second-highest motorable road.",
+      "Visit Thiksey Monastery and the historic Shey Palace.",
+    ],
+    itinerary: [
+      {
+        title: "Day 1: Srinagar - Sonmarg - Kargil",
+        details: [
+          "Drive from Srinagar to Kargil, passing through Sonmarg, covering 200 km in 5 hours.",
+          "Stop at Zoila Pass (11,575 ft) and Drass Village, the second coldest inhabited place in the world.",
+          "Visit Kargil War Memorial to pay tribute to the soldiers of the 1999 Kargil War.",
+        ],
+      },
+      {
+        title: "Day 2: Kargil - Leh",
+        details: [
+          "Drive from Kargil to Leh (200 km / 4 hrs), passing through Fotula Pass and Lamayuru Monastery.",
+          "Visit Sangam Spituk (confluence of Zanskar and Indus rivers) and Magnetic Hill.",
+          "Explore Hall of Fame, a museum dedicated to Indian soldiers, and Gurudwara Pather Sahib.",
+        ],
+      },
+      {
+        title: "Day 3: Leh - Nubra Valley (140 km / 4 hrs)",
+        details: [
+          "Drive to Nubra Valley via Khardungla Pass, the highest motorable road in the world.",
+          "Visit Diskit Monastery and explore the white sand dunes at Hundar.",
+          "Optional camel ride on double-humped camels.",
+        ],
+      },
+      {
+        title: "Day 4: Nubra to Pangong Lake (150 km / 5 hrs)",
+        details: [
+          "Drive to Pangong Lake via the Shayok River Road.",
+          "Enjoy the scenic beauty and color-changing waters of the lake.",
+          "Overnight stay at Pangong Lake.",
+        ],
+      },
+      {
+        title: "Day 5: Pangong Lake to Leh via Changla Pass (150 km / 5 hrs)",
+        details: [
+          "Drive back to Leh via Changla Pass, the world's second-highest motorable road.",
+          "Visit Thiksey Monastery and Shey Palace.",
+          "Optional visit to the Rancho School.",
+        ],
+      },
+      {
+        title: "Day 6: Leh - Departure",
+        details: [
+          "After breakfast, transfer to Leh airport for your onward journey.",
+          "End of the trip with fond memories of Ladakh.",
+        ],
+      },
+    ],
+    image_gallery: [
+      "/ladakh-2.jpg",
+      "/ladakh-3.jpg",
+      "/ladakh-4.jpg",
+      "/ladakh-5.jpg",
+      "/ladakh-6.jpg",
+    ],
+    featured_image: "/ladakh-3.jpg",
+    includes: [
+      "Accommodation as per the itinerary.",
+      "Breakfast and dinner at all destinations.",
+      "Comfortable non-AC vehicle for all days as per the itinerary.",
+      "Experienced English-speaking driver.",
+      "Driver charges, accommodation, fuel, and inter-state tolls.",
+      "Inner Line Permit.",
+      "Welcome drink (Kashmiri saffron tea).",
+      "Oxygen cylinder for emergency use.",
+      "First aid box.",
+    ],
+    excludes: [
+      "Personal expenses, tips, beverages, and meals not mentioned in the itinerary.",
+      "Costs arising from unforeseen circumstances like medical emergencies, natural calamities, etc.",
+      "Entrance fees for monuments and monasteries.",
+      "Airfare to and from Leh or other destinations.",
+      "Medical and travel insurance.",
+      "Optional activities like camel rides, rafting, or additional excursions.",
+    ],
+  },
+  {
+    title: "6N 7D Trip to Ladakh Valley from Srinagar",
+    slug: "ladakh-6n-7d-trip-sxr",
+    short_desc:
+      "An immersive 7-day journey through Srinagar, Sonmarg, Kargil, Leh, Nubra, and Pangong.",
+    overview:
+      "Experience the beauty and culture of Ladakh with this 6-night, 7-day itinerary. Journey from Srinagar to Kargil, Leh, Nubra, Pangong, and back, exploring the breathtaking landscapes and cultural landmarks.",
+    duration: {
+      days: 7,
+      nights: 6,
+    },
+    destination: "Ladakh",
+    highlights: [
+      "Visit the historic Drass War Memorial and Zoila Pass.",
+      "Travel through the mesmerizing Fotula Pass and Lamayuru Monastery.",
+      "Explore the confluence of Zanskar and Indus rivers at Sangam Spituk.",
+      "Marvel at the optical illusion at Magnetic Hill.",
+      "Experience the tranquil Shanti Stupa and Leh Palace.",
+      "Drive to Nubra Valley via Khardungla Top and ride double-humped camels.",
+      "Discover the beauty of Pangong Lake with its color-changing waters.",
+      "Visit the cultural richness of Thiksey Monastery and Shey Palace.",
+    ],
+    itinerary: [
+      {
+        title:
+          "Day 1: Srinagar to Sonmarg to Kargil (5hrs / 200km, Elevation 3500m)",
+        details: [
+          "Embark on a scenic journey from Srinagar to Kargil, passing through Sonmarg and covering 200km in 5 hours.",
+          "Visit the Zoila Pass (11575 ft) and Drass War Memorial.",
+          "Explore Drass Village, the second coldest inhabited place in the world.",
+          "Overnight stay in Kargil.",
+        ],
+      },
+      {
+        title: "Day 2: Kargil to Leh (4hrs / 200km, Elevation 2676m)",
+        details: [
+          "Drive from Kargil to Leh, covering 200km in 4 hours.",
+          "Visit Fotula Pass, Lamayuru Monastery, Sangam Spituk, Magnetic Hill, and Hall of Fame.",
+          "Explore the Gurudwara Pather Sahib.",
+          "Overnight stay in Leh.",
+        ],
+      },
+      {
+        title: "Day 3: Rest & Explore Leh (Elevation 3500m)",
+        details: [
+          "Rest and acclimatize to the high altitude.",
+          "Visit Shanti Stupa for a famous sunset view.",
+          "Explore Leh Palace and local markets.",
+          "Overnight stay in Leh.",
+        ],
+      },
+      {
+        title: "Day 4: Leh to Nubra Valley (140kms / 4hrs)",
+        details: [
+          "Drive from Leh to Nubra Valley, covering 140km in 4 hours.",
+          "Cross Khardungla Pass, the world's highest motorable road at 5570m.",
+          "Visit Diskit Monastery and the white sand dunes in Hundar.",
+          "Optional camel ride on double-humped camels (at own expense).",
+          "Overnight stay in Nubra Valley.",
+        ],
+      },
+      {
+        title: "Day 5: Nubra to Pangong Lake (150kms / 5hrs, Elevation 4350m)",
+        details: [
+          "Drive from Nubra Valley to Pangong Lake, via Shayok River Road.",
+          "Witness the color-changing waters of Pangong Lake.",
+          "Enjoy the sunset over Pangong Lake.",
+          "Overnight stay at Pangong Lake.",
+        ],
+      },
+      {
+        title: "Day 6: Pangong Lake to Leh via Changla Pass (150kms / 5hrs)",
+        details: [
+          "Drive back to Leh via Changla Pass (second-highest motorable road at 5347m).",
+          "Visit Thiksey Monastery and Shey Palace.",
+          "Optional visit to Rancho School.",
+          "Overnight stay in Leh.",
+        ],
+      },
+      {
+        title: "Day 7: Departure from Leh",
+        details: [
+          "Breakfast at the hotel.",
+          "Transfer to Leh airport for departure.",
+          "End your Ladakh journey with cherished memories.",
+        ],
+      },
+    ],
+    image_gallery: [
+      "/ladakh-2.jpg",
+      "/ladakh-3.jpg",
+      "/ladakh-4.jpg",
+      "/ladakh-5.jpg",
+      "/ladakh-6.jpg",
+    ],
+    featured_image: "/ladakh-4.jpg",
+    includes: [
+      "Accommodation at all destinations as per the itinerary.",
+      "Breakfast and dinner at all destinations.",
+      "Comfortable non-AC vehicle for all days as per the itinerary.",
+      "Experienced English-speaking driver.",
+      "Driver charges, accommodation, fuel, and inter-state tolls.",
+      "Inner Line Permit.",
+      "Welcome drink (Kashmiri saffron tea).",
+      "Oxygen cylinder for emergency use.",
+      "First aid box.",
+    ],
+    excludes: [
+      "Personal expenses, tips, beverages, and meals not mentioned in the itinerary.",
+      "Costs arising from unforeseen circumstances like medical emergencies, natural calamities, etc.",
+      "Entrance fees for monuments and monasteries.",
+      "Airfare to and from Leh or other destinations.",
+      "Medical and travel insurance.",
+      "Optional activities like camel rides, rafting, or additional excursions.",
     ],
   },
 ];

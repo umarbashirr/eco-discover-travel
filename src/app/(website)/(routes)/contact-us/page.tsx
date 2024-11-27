@@ -54,6 +54,13 @@ const ContactPage = () => {
                   Kashmir, India
                 </address>
               </div>
+              <div className="flex items-start gap-2 ">
+                <MapPin className="w- 4 h-4 mt-1 shrink-0" />{" "}
+                <address>
+                  Eco Discover Travel, Near Rafting Point, Pahalgam, Jammu &
+                  Kashmir, India
+                </address>
+              </div>
             </div>
             <h3 className="mt-4 mb-2 text-xl font-medium">Operating Hours</h3>
             <ul className="list-disc ml-8 flex flex-col gap-2 text-text">

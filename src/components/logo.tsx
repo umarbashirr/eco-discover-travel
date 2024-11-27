@@ -6,9 +6,9 @@ export const Logo = () => {
   return (
     <Link href="/">
       <Image
-        src="/logo.svg"
+        src="/eco_discover_logo.png"
         alt="Eco Discover Travel Logo"
-        width={173}
+        width={100}
         height={36}
       />
     </Link>

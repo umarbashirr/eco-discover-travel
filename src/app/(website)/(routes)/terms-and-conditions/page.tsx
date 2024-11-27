@@ -13,7 +13,10 @@ import Link from "next/link";
 const TermsAndConditionsPage = () => {
   return (
     <>
-      <PageHero title="Terms & Conditions" tagline="test" />
+      <PageHero
+        title="Terms & Conditions"
+        tagline="Understanding Our Commitments and Your Responsibilities"
+      />
       <Container className="my-12 md:my-24 lg:max-w-screen-lg">
         <p className="mb-4  text-muted-foreground leading-loose">
           Welcome to Eco Discover Travel! By accessing our services and making
@@ -48,8 +51,8 @@ const TermsAndConditionsPage = () => {
           <ul className="mt-2 list-disc ml-8 space-y-2">
             <li className=" text-muted-foreground leading-loose">
               Cancellations must be communicated via email to{" "}
-              <Link href="mailto:hotels@ecodiscovertravel.com">
-                hotels@ecodiscovertravel.com
+              <Link href="mailto:info@ecodiscovertravel.com">
+                info@ecodiscovertravel.com
               </Link>
             </li>
             <li className=" text-muted-foreground leading-loose">
@@ -187,7 +190,7 @@ const TermsAndConditionsPage = () => {
         </div>
         <p className="mt-4 text-muted-foreground">
           For any questions or further clarification, feel free to contact us
-          at: Email: hotels@ecodiscovertravel.com
+          at: Email: info@ecodiscovertravel.com
         </p>
       </Container>
     </>
