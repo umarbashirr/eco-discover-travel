@@ -1,5 +1,5 @@
 import { otherRoutes, routes } from "@/data/routes";
-import { Facebook, Instagram, Youtube } from "lucide-react";
+import { Instagram } from "lucide-react";
 import Link from "next/link";
 import { Container } from "./container";
 import { Separator } from "./ui/separator";
