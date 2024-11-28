@@ -10,7 +10,7 @@ const AboutPage = () => {
       <PageHero
         title="About Us"
         tagline="Learn more about our journey, our services, and what we stand for."
-        image={"/office_o.jpg"}
+        image={"/gulmarg.jpg"}
       />
       <section className="my-12 md:my-24">
         <Container className="grid grid-cols-1 lg:grid-cols-2 gap-10">

@@ -20,14 +20,8 @@ export const Footer = () => {
               reliable service.
             </p>
             <div className="mt-4 flex items-center gap-4">
-              <Link href="/">
-                <Facebook className="w-6 h-6 text-gray-300" />
-              </Link>
-              <Link href="/">
+              <Link href="https://www.instagram.com/ecodiscovertravel">
                 <Instagram className="w-6 h-6 text-gray-300" />
-              </Link>
-              <Link href="/">
-                <Youtube className="w-6 h-6 text-gray-300" />
               </Link>
             </div>
           </div>
