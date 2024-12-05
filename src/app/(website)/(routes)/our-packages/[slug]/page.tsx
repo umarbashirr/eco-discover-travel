@@ -94,7 +94,7 @@ const SinglePackagePage = async ({
                     Cost Excludes
                   </h3>
                   <ul className="list-disc flex flex-col gap-2 ml-8 mt-4">
-                    {selectedPackage?.includes.map(
+                    {selectedPackage?.excludes.map(
                       (include: string, index: number) => (
                         <li className="flex items-center gap-2" key={index}>
                           <X className="text-red-500 w-4 h-4 shrink-0" />{" "}
