@@ -67,8 +67,12 @@ export const MainNavbar = () => {
                 <NavigationMenuTrigger>Our Hotels</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                    <ListItem title="The Ladakh Avenue" href="#">
-                      3 Star Premium Hotel. Coming Soon
+                    <ListItem
+                      title="The Ladakh Avenue"
+                      href="https://www.theladakhavenue.com"
+                      target="_blank"
+                    >
+                      3 Star Premium Hotel
                     </ListItem>
                     <ListItem
                       title="Hotel Malik Residency"
