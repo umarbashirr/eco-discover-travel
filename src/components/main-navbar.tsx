@@ -85,6 +85,14 @@ export const MainNavbar = () => {
                       {" "}
                       3 Star Deluxe Central Heated Hotel
                     </ListItem>
+                    <ListItem
+                      title="The Routes Pahalgam"
+                      href="https://theroutespahalgam.com"
+                      target="_blank"
+                    >
+                      {" "}
+                      3 Star Deluxe Central Heated Hotel
+                    </ListItem>
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
