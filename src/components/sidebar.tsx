@@ -96,6 +96,13 @@ export const Sidebar: React.FC<SidebarProps> = ({
             >
               Hotel Pahalgam View
             </Link>
+            <Link
+              href="https://theroutespahalgam.com"
+              target="_blank"
+              className="p-2 rounded whitespace-nowrap transition duration-300 ease-in-out font-medium bg-white hover:bg-gray-100 text-primary"
+            >
+              The Routes Pahalgam
+            </Link>
           </div>
         </div>
         <Link
