@@ -90,11 +90,11 @@ export const Sidebar: React.FC<SidebarProps> = ({
               Hotel Malik Residency
             </Link>
             <Link
-              href="https://hotelpahalgamview.com"
+              href="https://www.hotelpahalgamwaveinn.com"
               target="_blank"
               className="p-2 rounded whitespace-nowrap transition duration-300 ease-in-out font-medium bg-white hover:bg-gray-100 text-primary"
             >
-              Hotel Pahalgam View
+              Hotel Pahalgam Wave Inn
             </Link>
           </div>
         </div>
