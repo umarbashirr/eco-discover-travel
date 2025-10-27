@@ -82,8 +82,8 @@ export const MainNavbar = () => {
                       3 Star Deluxe Hotel
                     </ListItem>
                     <ListItem
-                      title="Hotel Pahalgam View"
-                      href="https://hotelpahalgamview.com"
+                      title="Hotel Pahalgam Wave Inn"
+                      href="https://hotelpahalgamwaveinn.com"
                       target="_blank"
                     >
                       {" "}
