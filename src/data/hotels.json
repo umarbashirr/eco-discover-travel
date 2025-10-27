@@ -1,0 +1,97 @@
+[
+  {
+    "id": "001",
+    "slug": "hotel-pahalgam-wave-inn",
+    "name": "Hotel Pahalgam Wave Inn",
+    "tagline": "Boutique Stay by the River",
+    "contact": {
+      "phone": "+91 7006 853 438",
+      "email": null
+    },
+    "location": {
+      "area": "Rafting Point / Movera, Pahalgam",
+      "city": "Pahalgam",
+      "region": "Anantnag / Jammu & Kashmir",
+      "country": "India",
+      "lat": null,
+      "lng": null
+    },
+    "summary": "A cozy 11-room boutique hotel near the Rafting Point, surrounded by pine forests and mountain views. Modern comforts with central heating and personalised Kashmiri hospitality.",
+    "details": {
+      "total_rooms": 11,
+      "property_type": "Boutique Hotel",
+      "features": [
+        "Central heating",
+        "24/7 assistance",
+        "Breakfast available",
+        "Laundry service",
+        "Mountain views"
+      ],
+      "description": "Hotel Pahalgam Wave Inn offers cozy boutique accommodation designed for families, couples, and solo travelers. The property emphasizes local hospitality, comfortable heated rooms, and easy access to outdoor activities (rafting point nearby)."
+    },
+    "amenities": [
+      "Central heating",
+      "Breakfast",
+      "Laundry",
+      "24/7 assistance",
+      "Free Wi-Fi (listed on booking sites)",
+      "Airport transfer (listed on some booking portals)"
+    ],
+    "images": [
+      {
+        "caption": "Logo / branding",
+        "source": "hotel website"
+      },
+      {
+        "caption": "Property photo (external)",
+        "source": "booking listings (example photos)"
+      }
+    ],
+    "policies": {
+      "check_in": "After 12:00 PM (typical, verify on booking)",
+      "check_out": "Before 11:00 AM (typical, verify on booking)",
+      "cancellation": null
+    },
+    "booking": {
+      "official_booking_url": "https://www.hotelpahalgamwaveinn.com",
+      "third_party_example_rate": {
+        "provider": "Priceline",
+        "sample_price": "USD 65 (per night) - example from listing, subject to availability"
+      }
+    },
+    "rooms": [
+      {
+        "id": "deluxe",
+        "name": "Deluxe Room",
+        "short_description": "Warm decor, essential amenities, comfortable bedding — designed for relaxation.",
+        "details": {
+          "capacity": {
+            "adults": 2,
+            "children": 1
+          },
+          "amenities": [
+            "Central heating",
+            "Private bathroom",
+            "Comfortable bedding"
+          ],
+          "cover": {
+            "caption": "Hotel Pahalgam Wave Inn Deluxe Room",
+            "source": "/hotels/hotel-pahalgam-wave-inn/hotel-pahalgam-wave-inn-deluxe-room.jpg"
+          },
+          "images": [
+            {
+              "caption": "Deluxe Room photo (example)",
+              "source": "hotel website / booking portals"
+            }
+          ],
+          "price_from": 3000,
+          "price_notes": "No official prices listed on the hotel homepage; third-party listings show rates (sample provided under booking.third_party_example_rate)."
+        }
+      }
+    ],
+    "meta": {
+      "last_fetched_from": "hotelpahalgamwaveinn.com and public booking listings",
+      "notes": "Data scraped from the hotel's public site and cross-referenced with booking listings. Verify dynamic data (rates, availability, exact policies, images) at booking time."
+    }
+  }
+]
