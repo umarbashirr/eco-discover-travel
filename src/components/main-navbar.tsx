@@ -83,7 +83,7 @@ export const MainNavbar = () => {
                     </ListItem>
                     <ListItem
                       title="Hotel Pahalgam Wave Inn"
-                      href="https://hotelpahalgamwaveinn.com"
+                      href="https://www.hotelpahalgamwaveinn.com"
                       target="_blank"
                     >
                       {" "}
